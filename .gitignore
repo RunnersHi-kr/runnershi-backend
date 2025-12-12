@@ -17,6 +17,9 @@ bin/
 !**/src/main/**/bin/
 !**/src/test/**/bin/
 
+###로컬 설정 및 민감 정보###
+application.yml
+
 ### IntelliJ IDEA ###
 .idea
 *.iws
@@ -35,3 +38,4 @@ out/
 
 ### VS Code ###
 .vscode/
+src/main/resources/application.yml
