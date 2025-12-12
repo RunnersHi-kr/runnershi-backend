@@ -28,7 +28,11 @@ spring:
 
 logging:
   level:
-    org.hibernate.SQL: debug  # 하이버네이트가 날리는 SQL 로그를 DEBUG 레벨로 출력
+    org.springframework.security: DEBUG
+
+#logging:
+#  level:
+#    org.hibernate.SQL: debug  # 하이버네이트가 날리는 SQL 로그를 DEBUG 레벨로 출력
 
 # ==============================
 #    아래 설정들은 "나중에" Postgres로 전환할 때 참고용으로 남겨둔 것들

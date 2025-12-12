@@ -30,6 +30,8 @@ public class SecurityConfig {
                 // URL별 권한 설정
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers("/api/auth/**").permitAll()
+                        .requestMatchers("/error").permitAll() // 에러 처리 경로 열기
+                        .requestMatchers("/h2-console/**").permitAll() // H2 콘솔 열기
                         .anyRequest().authenticated()
                 )
 
